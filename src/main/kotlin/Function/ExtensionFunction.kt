@@ -4,6 +4,11 @@ fun main() {
     fun String.extPrint(handsomeValue: HandsomeOne): Unit {
 
     }
+    /**
+     *
+     * infix boşluklu yazmamızı sağlıyor aynı zamanda extension function yapabiliyoruz.
+     */
+    ("3" extPlus "4").log("")
 
     val name: String = "Uğur"
 
@@ -27,6 +32,10 @@ fun main() {
     ("3" extPlus "5") log2 ("")
 
     // 2saat11dakika
+
+
+    val list = mutableListOf(1, 2, 3)
+    list.swap(0, 2)
 
 
 }
@@ -143,4 +152,26 @@ class Rectange : Square() {
         TODO("Not yet implemented")
     }
 }
+
+
+/**
+ *
+ *
+ * Kotlinlang Org devamı
+ */
+
+
+fun MutableList<Int>.swap(index1: Int, index2: Int) {
+    val tmp = this[index1]// thiss corresponds to te list
+    this[index1] = this[index2]
+    this[index2] = tmp
+}
+
+
+var Shape.type
+    get() = "Rectangle"
+    set(value) {
+        type = value
+    }
+
 

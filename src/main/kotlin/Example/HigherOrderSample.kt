@@ -2,7 +2,9 @@ fun main(args: Array<String>) {
     val readline = readLine()?.toInt()
     if (readline != null) {
         readline
-        floorButtonClick(readline) {}
+        floorButtonClick(readline) {
+            println("Test")
+        }
     }
 }
 
@@ -12,7 +14,7 @@ fun floorButtonClick(floorButtonNumber: Int, floor: (floorNumber: Int) -> Unit) 
         chooseFloorNumber(true) {}
         floor(floorButtonNumber)
         waitingOpenDoor(floorButtonNumber)
-        opentoWorld(floorButtonNumber) // floorbuttonClick fonksiyon içi çalışacak
+        opentoWorld(floorButtonNumber) //
     }
 }
 

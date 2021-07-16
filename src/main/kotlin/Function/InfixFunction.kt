@@ -33,9 +33,29 @@ fun main() {
     }
 
 
+    /** extension function kullanımı value ile
+     *
+     *
+     */
+    (3 + 4).log("")
+
+    /***
+     *
+     * değişkenlere de kullanabiliyoruz.
+     */
+
+
+}
+
+fun Number.log(emptyParam : String){
+    println(emptyParam + this)
+
 }
 
 class InfixFuction {
+
+
+
 
 
     private infix fun downloadImage(imageUrl: String) {
